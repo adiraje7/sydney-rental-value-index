@@ -157,23 +157,17 @@ Selecting locations on the map updates relevant dashboard visualisations.
 | Version Control | Git & GitHub |
 
 ---
-
-# Project Structure
-
-```text
-sydney-rental-value-index/
-│
-├── data/
-│   └── processed/        # Cleaned rental datasets
-│
-├── python/               # Python ETL and analysis scripts
-│
-├── sql/                  # SQL queries
-│
-├── reports/              # Project reports and analysis
-│
-├── docs/                 # Documentation
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+#Project Workflow
+Raw Rental Data
+        ↓
+Data Cleaning & Validation
+        ↓
+Python ETL Pipeline
+        ↓
+Exploratory Data Analysis
+        ↓
+Rental Value Index (SRVI)
+        ↓
+Tableau Dashboard
+        ↓
+Insights & Visualisation
