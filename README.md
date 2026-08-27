@@ -156,7 +156,7 @@ The dashboard also includes interactive filtering, allowing users to explore ren
 
 **View the interactive dashboard on Tableau Public:**
 
-[Add your Tableau Public Dashboard Link Here](https://public.tableau.com/app/profile/adi.raje8198/viz/sydney_rental_value_index/Dashboard1))
+[Sydney Rental Value Index](https://public.tableau.com/app/profile/adi.raje8198/viz/sydney_rental_value_index/Dashboard1))
 
 ---
 
