@@ -1,52 +1,71 @@
 # Sydney Rental Value Index (SRVI)
 
-> An end-to-end data analytics project exploring Sydney's rental market and identifying postcode-level rental value opportunities using rental pricing data and an interactive Tableau dashboard.
+> A data analytics project exploring Sydney's rental market and identifying postcode-level rental value opportunities using Python, SQL, and Tableau.
+
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue)
+![Tableau](https://img.shields.io/badge/Tableau-Data%20Visualisation-orange)
+![SQL](https://img.shields.io/badge/SQL-Analysis-blue)
 
 ---
 
-## Overview
+## Project Overview
 
-Sydney's rental market varies significantly across different postcodes and property types.
+Sydney's rental market is expensive and highly variable across different locations and property types.
 
-A lower rent does not always mean better value, and higher-priced areas may offer different market characteristics.
+While renters can easily compare individual property prices, understanding which areas provide the strongest overall rental value is more challenging.
 
-This project analyses Sydney rental data to develop a **Sydney Rental Value Index (SRVI)** and identify areas that may represent strong rental value opportunities.
+This project analyses Sydney rental data and develops a **Sydney Rental Value Index (SRVI)** to identify postcode-level rental value opportunities.
 
-The analysis combines rental prices, listing activity and postcode-level metrics to make Sydney's rental market easier to explore.
+The project follows an end-to-end analytics workflow, including:
+
+- Data cleaning and validation
+- Exploratory data analysis
+- Rental market analysis
+- Rental Value Index development
+- SQL analysis
+- Interactive Tableau dashboard development
 
 ---
 
 # Business Problem
 
-Rental prices alone do not provide a complete picture of market value.
+Sydney renters face significant differences in rental prices depending on location and property characteristics.
+
+A high rental price does not necessarily mean poor value, and a low rental price does not automatically represent the best opportunity.
 
 The key question explored in this project is:
 
 > **Which Sydney postcodes provide the strongest rental value opportunities?**
 
-To answer this, the project analyses rental prices and market activity across Sydney postcodes and develops a Rental Value Index (SRVI).
+To investigate this, the project analyses rental prices and market availability to develop a postcode-level Rental Value Index.
 
 ---
 
-# Project Objectives
+# Objectives
 
-- Clean and prepare a large Sydney rental dataset
-- Analyse rental prices across postcodes and dwelling characteristics
-- Identify patterns in rental prices and market activity
-- Develop a postcode-level Rental Value Index (SRVI)
-- Identify high-value rental opportunities
+The main objectives of this project are to:
+
+- Analyse Sydney's rental market using real rental data
+- Clean and validate a large residential rental dataset
+- Investigate rental prices across postcodes
+- Analyse rental prices by number of bedrooms
+- Identify postcode-level rental value opportunities
+- Develop a Sydney Rental Value Index (SRVI)
 - Build an interactive Tableau dashboard
-- Present insights through data visualisation
+- Communicate insights through data visualisation
 
 ---
 
 # Dataset
 
-The project uses NSW residential rental bond lodgement data.
+The project uses the:
 
-The raw dataset was processed using Python to prepare it for analysis.
+**NSW Fair Trading Residential Rental Bond Lodgements Year 2025 dataset**
 
-### Key fields used
+The dataset contains residential rental information used to analyse rental prices and market activity across Sydney.
+
+Key fields used during the analysis include:
 
 - Lodgement Date
 - Postcode
@@ -54,67 +73,58 @@ The raw dataset was processed using Python to prepare it for analysis.
 - Bedrooms
 - Weekly Rent
 
-The processed dataset contains more than **280,000 rental records** used for analysis and visualisation.
+The data was cleaned and processed using Python before being used for further analysis and visualisation.
 
 ---
 
-# Data Processing
+# Data Cleaning and Preparation
 
-The dataset was cleaned and prepared using Python and Pandas.
+The raw dataset required cleaning and validation before analysis.
 
-Key processing steps included:
+The data preparation process included:
 
-- Loading and inspecting the raw dataset
-- Selecting relevant analytical variables
 - Standardising column names
-- Handling missing and invalid values
+- Selecting relevant variables
+- Checking for missing values
 - Identifying duplicate records
-- Preparing rental data for analysis
-- Creating a cleaned dataset for downstream analysis
+- Cleaning rental price information
+- Preparing postcode-level rental data
+- Creating analysis-ready datasets for visualisation
+
+The processed dataset was then used to calculate rental market metrics and develop the Rental Value Index.
 
 ---
 
 # Rental Value Index (SRVI)
 
-The **Sydney Rental Value Index (SRVI)** is designed to provide a comparative measure of rental value across Sydney postcodes.
+The **Sydney Rental Value Index (SRVI)** is designed to identify rental opportunities by comparing rental affordability and market availability across different postcodes.
 
-The index is used to explore the relationship between:
+The index allows rental markets to be compared beyond simply looking at rental prices.
 
-- Rental affordability
-- Rental market activity
-- Postcode-level rental patterns
+A postcode with a stronger Rental Value Score represents a potentially more attractive rental opportunity relative to other locations in the dataset.
 
-Higher-value opportunities are highlighted to help identify postcodes with stronger relative rental value.
+The SRVI is used throughout the Tableau dashboard to identify and visualise the strongest rental value opportunities.
 
 ---
 
-# Exploratory Analysis
+# Key Insights
 
-The analysis explores several key questions:
+The analysis highlights several important patterns in Sydney's rental market:
 
-### Rental prices by postcode
-
-Which Sydney postcodes have the highest and lowest rental prices?
-
-### Rental prices by number of bedrooms
-
-How does weekly rent change as the number of bedrooms increases?
-
-### Rental value opportunities
-
-Which postcodes achieve the strongest Rental Value Index scores?
-
-### Market availability
-
-How does rental market activity vary across different rent levels and locations?
+- Rental prices vary significantly across different postcodes.
+- Rental value cannot be evaluated using weekly rent alone.
+- Some postcodes provide stronger rental value opportunities when affordability and market activity are considered together.
+- Rental prices generally increase as the number of bedrooms increases.
+- The number of available rental listings varies significantly across the market.
+- The Rental Value Index helps identify high-value postcode-level opportunities.
 
 ---
 
-# Tableau Dashboard
+# Interactive Dashboard
 
-An interactive Tableau dashboard was developed to communicate the main findings.
+The project includes an interactive Tableau dashboard designed to provide an executive-level view of Sydney's rental market.
 
-## Dashboard Features
+The dashboard includes:
 
 ### Key Performance Indicators
 
@@ -124,11 +134,11 @@ An interactive Tableau dashboard was developed to communicate the main findings.
 
 ### SRVI Map
 
-An interactive map showing rental market activity across Sydney.
+A geographical visualisation showing rental market activity across Sydney postcodes.
 
-### Top 10 Rental Value Opportunities
+### Top Rental Value Opportunities
 
-A ranking of postcodes with the strongest rental value scores.
+A ranked view of postcodes with the strongest Rental Value Scores.
 
 ### Rent by Bedrooms
 
@@ -136,43 +146,47 @@ A comparison of rental prices across different bedroom counts.
 
 ### Rental Value vs Market Availability
 
-A scatter plot exploring the relationship between adjusted rent and listing activity.
+A scatter plot showing the relationship between rental prices, market activity, and rental value opportunities.
 
-### Interactive Filtering
+The dashboard also includes interactive filtering, allowing users to explore rental opportunities by postcode.
 
-Selecting locations on the map updates relevant dashboard visualisations.
+---
+
+## Tableau Dashboard
+
+**View the interactive dashboard on Tableau Public:**
+
+[Add your Tableau Public Dashboard Link Here](https://public.tableau.com/app/profile/adi.raje8198/viz/sydney_rental_value_index/Dashboard1))
 
 ---
 
 # Tech Stack
 
-| Category | Tools |
-|----------|-------|
+| Category | Tools Used |
+|---|---|
 | Programming | Python |
 | Data Analysis | Pandas, NumPy |
-| Data Processing | Python ETL |
-| Database | PostgreSQL |
-| Querying | SQL |
+| Database / Querying | SQL |
 | Visualisation | Tableau Public |
 | Version Control | Git & GitHub |
 
 ---
-# Project Structure
+
+# Project Workflow
 
 ```text
-sydney-rental-value-index/
-│
-├── data/
-│   └── processed/        # Cleaned rental datasets
-│
-├── python/               # Python ETL and analysis scripts
-│
-├── sql/                  # SQL queries
-│
-├── reports/              # Project reports and analysis
-│
-├── docs/                 # Documentation
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
+Raw Rental Data
+       ↓
+Python Data Cleaning
+       ↓
+Data Validation
+       ↓
+Exploratory Data Analysis
+       ↓
+Rental Market Analysis
+       ↓
+Rental Value Index
+       ↓
+SQL Analysis
+       ↓
+Tableau Dashboard
